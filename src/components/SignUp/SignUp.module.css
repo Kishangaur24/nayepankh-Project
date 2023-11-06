@@ -74,3 +74,14 @@
  
   
 }
+
+@media screen and (max-width:489px){
+  
+    html{
+      font-size: 10px;
+    }
+  .btn button{
+    width: 6rem;
+    height: 4rem;
+  }
+}
