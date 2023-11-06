@@ -19,6 +19,7 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 3px 6px 6px #333;
+  position: relative;
 
 }
 .signup input{
@@ -47,4 +48,29 @@
 }
 .main h1{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nameError{
+   
+  color: red;
+  position: absolute;
+  top:50px;
+  left: 60px;
+  
+}
+.emailError{
+  top: 150px;
+  left: 60px;
+  color: red;
+  position: absolute;
+ 
+  
+}
+.passwordError{
+  bottom: 230px;
+  left: 60px;
+  color: red;
+  position: absolute;
+ 
+  
 }
