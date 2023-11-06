@@ -8,7 +8,14 @@ const SignIn = () => {
    const navigate = useNavigate("")
   const handleLogin=(e)=>{
     e.preventDefault()
-
+     const data = JSON.parse(localStorage.getItem("user"))
+     console.log(data)
+     if(email===data[0].email && password===data[0].password){
+      alert("you login successfully")
+      navigate("/home")
+     }else{
+      alert("your email or password incorrect")
+     }
   }
 
   const handleSignIn=()=>{

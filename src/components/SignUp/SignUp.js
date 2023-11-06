@@ -37,6 +37,7 @@ const SignUp = () => {
      setErrors(validationErrors)
      if(Object.keys(validationErrors).length===0){
       alert("You registered successfully")
+      navigate("/home")
      }
      const existingData = JSON.parse(localStorage.getItem('signupData')) || [];
 // Add the new signup data to the existing data array
@@ -48,7 +49,7 @@ const SignUp = () => {
   setName("")
   setEmail("")
   setPassword("")
-  navigate("/home")
+  
     
   }
  
