@@ -48,9 +48,15 @@ const SignUp = () => {
   setName("")
   setEmail("")
   setPassword("")
-  navigate("/login")
+  navigate("/home")
     
   }
+ 
+  const handleLogin=()=>{
+    navigate("/login")
+  }
+
+
   return (
     <div  className={style.main}>
      <h1>Welcome to NayePankh foundation</h1>
@@ -85,7 +91,7 @@ const SignUp = () => {
          
         <div className={style.btn}>
         <button onClick={handleSubmit}>Register here</button>
-        <button>SignIn</button>
+        <button onClick={handleLogin}>Login</button>
         </div>
       </div>
   
